@@ -72,6 +72,7 @@ body{
 }
 .wd-main-content{
     display: inline-block;
+    padding-left: 12px;
 }
 
 .wd-main-title-container{
@@ -79,7 +80,6 @@ body{
     border-style: solid;
     display: inline-block;
     width: 506px;
-
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
@@ -98,6 +98,12 @@ body{
 .wd-inline-block{
     height: 48px;
     width: 48px;
+    display: inline-block;
+}
+
+.wd-inline-block-title{
+    height: 48px;
+    width: 60px;
     display: inline-block;
 }
 .wd-icons-container{
