@@ -1,0 +1,26 @@
+export default [
+    {   title: 'Home', icon: 'fas fa-home',
+    },
+    {   title: 'Explore',
+        icon: 'fas fa-hashtag',
+    },
+    {   title: 'Notifications',
+        icon: 'fas fa-bell',
+    },
+    {   title: 'Messages',
+        icon: 'fas fa-envelope',
+    },
+    {   title: 'Bookmarks',
+        icon: 'fas fa-bookmark',
+    },
+    {   title: 'Lists',
+        icon: 'fas fa-list',
+    },
+    {   title: 'Profile',
+        icon: 'fas fa-user',
+    },
+    {   title: 'More',
+        icon: 'fas fa-comment-dots',
+    }
+];
+
