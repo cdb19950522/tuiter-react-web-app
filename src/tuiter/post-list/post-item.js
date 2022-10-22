@@ -22,7 +22,7 @@ const PostItem = ({
         <li className="list-group-item">
             <div className="row">
                 <div className="col-2">
-                        <img  height={50} className="float-end rounded-3" src={require(`../../images/${post.avatar}`)}/>
+                        <img alt="foo" height={50} className="float-end rounded-3" src={require(`../../images/${post.avatar}`)}/>
                 </div>
                 <div className="col-10">
                     <span className="fw-bolder">{post.userName}</span>
@@ -31,7 +31,7 @@ const PostItem = ({
                     <span className="text-secondary">{post.handle} - {post.time}</span>
                 <div>{post.title}</div>
                 <div>
-                    <img  className=" rounded-top" style={{width:'100%'}}  src={require(`../../images/${post.image}`)}/>
+                    <img alt="foo" className=" rounded-top" style={{width:'100%'}}  src={require(`../../images/${post.image}`)}/>
                     {!show&&
                     <div className="rounded-corners-bottom list-group-item">
                             <span className="ms-1 me-1">{post.contextTitle}</span>
