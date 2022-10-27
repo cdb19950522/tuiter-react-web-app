@@ -1,10 +1,13 @@
 
 import PostList from "../post-list";
+import WhatsHappening from "./whats-happening";
 
 const HomeComponent = () =>{
     return(
        <div>
-            <PostList/>
+           <WhatsHappening/>
+
+           <PostList/>
 
        </div>
     )
