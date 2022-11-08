@@ -2,6 +2,7 @@ import React from "react";
 import TuitStats from "./TuitStats";
 import {deleteTuit} from "../tuits/tuits-reducer";
 import {useDispatch} from "react-redux";
+import {deleteTuitThunk} from "../../service/tuits-thunks";
 
 const PostItem = ({
     post = {
@@ -21,13 +22,13 @@ const PostItem = ({
                   }) =>{
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="list-group-item">
             <div className="row">
                 <div className="col-2">
-                        <img alt="foo" height={50} className="float-end rounded-circle" src={require(`../../images/${post.image}`)}/>
+                        <img alt="" height={50} className="float-end rounded-circle" src={`../../images/${post.image}`}  />
                 </div>
                 <div className="col-10">
                     <i className="bi bi-x-lg float-end"
@@ -37,7 +38,7 @@ const PostItem = ({
                     <i className="bi bi-check-circle-fill"></i>&nbsp;
                     <span className="text-secondary">{post.handle} - {post.time}</span>
                     <div>{post.tuit}</div>
-                    <TuitStats replies = {post.replies} retuits = {post.retuits} likes={ post.likes} liked = {post.liked}></TuitStats>
+                    <TuitStats tuit = {post}></TuitStats>
 
                 </div>
             </div>
