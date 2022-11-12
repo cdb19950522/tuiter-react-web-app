@@ -16,6 +16,12 @@ const TuitStatus = ({tuit}) => {
                    className="bi bi-heart-fill me-2 text-danger"></i>
                 {tuit.likes}
             </div>
+            <div className="col text-secondary">
+
+                <i onClick={() => dispatch(updateTuitThunk({...tuit, dislikes: tuit.dislikes + 1}))}
+                   className="bi bi-hand-thumbs-down me-2 text-danger"></i>
+                {tuit.dislikes}
+            </div>
 
             <div className="col text-secondary"><i className="bi bi-box-arrow-up"></i></div>
         </div>
