@@ -1,0 +1,21 @@
+.btn-primary.override-rounded{
+    border-radius: 20px;
+    width: 100%;
+}
+.list-group-item.override-color{
+    color: white;
+    background-color: black;
+}
+.wd-search-tuiter{
+    bottom: 10px;
+    left: 15px;
+}
+.list-group-item.override-darkcolor{
+    color: white;
+}
+.list-group.override-round{
+    border-radius: 20px;
+}
+.row.paddingzero{
+    --bs-gutter-x:0rem;
+}
